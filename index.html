@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+  <script src="js/validacao.js"></script>
+  <title>Formulário</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "jumbotron">
+            <h1 class = "text-center">Validação de Formulário</h1>
+        </div>
+
+        <div class="col-md-5">
+            <table class = "table">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <div class = "panel panel-default">
+                <div class = "panel-heading">Cadastro de usuário</div>
+
+
+                <div class = "panel-body">
+                    <form name = "cadastro">
+
+                        <label>Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                        <label>Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                        <label>Data de Nascimento:</label>
+                        <input type="date" class="form-control" id="dataNascimento">
+                        <label>Sexo:</label>
+
+                        <div class="radio">
+                            <label>
+                                <input class="option" type="radio" name="optionsRadios" id="opcaoMasculino" value="option1"> Masculino
+                            </label>
+                        </div>
+
+                        <div class="radio">
+                            <label>
+                                <input class="option" type="radio" name="optionsRadios" id="opcaoFeminino" value="option2"> Feminino
+                            </label>
+                        </div>
+
+                        <button type="button" id = "submeterFormulario" onClick="controller.submeterFormulario()" class="btn btn-success">Submeter</button>
+                        <button type="button" onClick="controller.limparFormulario()" class="btn btn-danger">Descartar</button>
+                        <button type ="button" id = "limparTabela" onClick="controller.limparTabela()" class="btn btn-success">Limpar tabela</button>
+                    </form>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

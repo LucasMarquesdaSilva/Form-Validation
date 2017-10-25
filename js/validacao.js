@@ -72,12 +72,12 @@ var controller = (function() {
       },
       validarDataNascimento: function(dataNascimento, erros){
          if(!dataNascimento || dataNascimento == ''){
-            erros.push("Data de nascimento deve ser preenchido!");
+            erros.push("Data de nascimento deve ser preenchida!");
          }
       },
       validaEscolha: function(escolha, erros){
          if (! escolha[0].checked && ! escolha[1].checked){
-            erros.push("Opção deve ser preenchido!");
+            erros.push("Opção deve ser preenchida!");
          }
       },
        validarEmail: function(email, erros){
